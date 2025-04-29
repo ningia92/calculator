@@ -82,6 +82,14 @@ button {
     background-color: rgb(157, 159, 159);
 }
 
+.cancel {
+    background-color: rgb(178, 116, 116);
+}
+
+.cancel:hover {
+    background-color: rgb(148, 98, 98);
+}
+
 .operator {
     background-color: rgb(251, 181, 101);
 }
