@@ -1,0 +1,91 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 229, 229);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 67, 67);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.display {
+    text-align: right;
+    color: chartreuse;
+    background-color: black;  
+    padding: 15px;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: 550;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    font-size: large;
+    font-weight: 550;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: rgb(0, 0, 0);
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    flex: auto;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    flex: 1;
+}
+
+.equals {
+    grid-column: span 2;
+    background-color: rgb(85, 157, 85);
+}
+
+.equals:hover {
+    background-color: rgb(68, 125, 68);
+}
+
+.number {
+    background-color: rgb(200, 202, 202);
+}
+
+.number:hover {
+    background-color: rgb(157, 159, 159);
+}
+
+.operator {
+    background-color: rgb(251, 181, 101);
+}
+
+.operator:hover {
+    background-color: rgb(180, 130, 74);
+}
