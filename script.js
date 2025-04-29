@@ -21,7 +21,7 @@ const createCalculator = () => {
   // create display
   const display = document.createElement('div')
   display.classList.add('display')
-  display.textContent = '1 + 2'
+  display.textContent = '0'
   calculator.appendChild(display)
 
   // create buttons container
@@ -66,4 +66,12 @@ const createCalculator = () => {
   })
 }
 
+const populateDisplay = () => {
+  const digits = document.querySelectorAll('.number')
+  const display = document.querySelector('.display')
+  digits.forEach(digit => digit.addEventListener('click', () => display.textContent = digit.textContent))
+}
+
 createCalculator()
+
+populateDisplay()
