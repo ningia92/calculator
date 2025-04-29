@@ -69,7 +69,10 @@ const createCalculator = () => {
 const populateDisplay = () => {
   const digits = document.querySelectorAll('.number')
   const display = document.querySelector('.display')
-  digits.forEach(digit => digit.addEventListener('click', () => display.textContent = digit.textContent))
+  digits.forEach(digit => digit.addEventListener('click', () => {
+    if (display.textContent === '0') display.textContent = ''
+    display.textContent += digit.textContent
+  }))
 }
 
 createCalculator()
