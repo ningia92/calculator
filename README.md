@@ -34,4 +34,4 @@ A browser-based calculator application developed with JavaScript, HTML, and CSS 
 
 ## Demo
 
-Live on GitHub Pages: https://yourusername.github.io/calculator/
+Live on GitHub Pages: https://ningia92.github.io/calculator/
